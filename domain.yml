@@ -1,0 +1,43 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- order
+- vegetarian
+- non_vegetarian
+- veg_order
+- non_veg_order
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+
+responses:
+  utter_waiter_greet:
+  - text: What would you like to to order?
+  utter_veg_non_veg:
+  - text: What would you prefer veg or non veg?
+  utter_veg:
+  - text: we have masala dosa, idli, upma, paneer masala.
+  utter_non_veg:
+  - text: we have chicken biryani, mutton biryani, mutton masala, chicken
+  utter_anyother:
+  - text: Would you like to order anything else?
+  utter_thanks:
+  - text: You will get your order within 10 minutes.
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
